@@ -8,7 +8,6 @@ from aqt.utils import showInfo
 from e24ProgressBar.ProgressBarsWidget import *
 from e24ProgressBar.ReviewLogsCounts import *
 
-
 # We're going to add a menu item below. First we want to create a function to
 # be called when the menu item is activated.
 

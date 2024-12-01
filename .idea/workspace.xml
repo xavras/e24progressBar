@@ -4,20 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef7ecc63-ddd4-4808-991f-05c5a20805ce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/addons21.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e24ProgressBar/ProgressBarsWidget.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e24ProgressBar/ReviewLog.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e24ProgressBar/ReviewLogsCounts.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e24ProgressBar/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e24ProgressBar/shige_progress_bar.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e24ProgressBar/time_left.py" afterDir="false" />
+    <list default="true" id="ef7ecc63-ddd4-4808-991f-05c5a20805ce" name="Changes" comment="two progressbars and it kinda works&#10;todo: settings, cleaning">
+      <change beforePath="$PROJECT_DIR$/e24ProgressBar/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/e24ProgressBar/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,12 +94,36 @@
       <workItem from="1732822528858" duration="8054000" />
       <workItem from="1732943946362" duration="9390000" />
       <workItem from="1732982989522" duration="4469000" />
-      <workItem from="1733055520545" duration="16049000" />
+      <workItem from="1733055520545" duration="16366000" />
     </task>
+    <task id="LOCAL-00001" summary="two progressbars and it kinda works&#10;todo: settings, cleaning">
+      <option name="closed" value="true" />
+      <created>1733084625258</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1733084625258</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="two progressbars and it kinda works&#10;todo: settings, cleaning" />
+    <option name="LAST_COMMIT_MESSAGE" value="two progressbars and it kinda works&#10;todo: settings, cleaning" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
