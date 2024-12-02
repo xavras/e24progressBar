@@ -65,8 +65,8 @@ class ProgressBarsWidget:
             self.reviewLogsCounts.update()
 
         reviewLogsSumValue = self.reviewLogsCounts.getSumValue()
-        self.partialProgressBar.setValue(
-            int(reviewLogsSumValue / self.progressStepMaxValue * 100) % 100)
+        self.partialProgressBar.setValue(self.__getMotivatingProgressValue(
+            reviewLogsSumValue / self.progressStepMaxValue) * 100)
         self.partialProgressBar.setFormat(self.reviewLogsCounts.toString())
 
         completedMainProgressBoxes = math.floor(reviewLogsSumValue
@@ -92,3 +92,16 @@ class ProgressBarsWidget:
                 step.setStyleSheet(self.completedMainProgressBoxStyle)
             else:
                 step.setStyleSheet(self.emptyMainProgressBoxStyle)
+
+    motivatingPart = 0.2
+    motivatingPartScalar = 1.5
+    mainPart = 1 - motivatingPart
+    mainPartScalar = 1 / (mainPart * 1.0 + motivatingPart * motivatingPartScalar)
+    mainPartValue = mainPart * mainPartScalar
+    def __getMotivatingProgressValue(self, srcValue: float) -> float:
+        srcValue = srcValue % 1
+        if srcValue <= self.mainPart:
+            return srcValue * self.mainPartScalar
+        else:
+            return (self.mainPartValue
+                    + (srcValue - self.mainPart) * self.motivatingPartScalar)
