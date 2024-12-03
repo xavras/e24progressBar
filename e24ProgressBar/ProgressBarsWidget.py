@@ -73,8 +73,9 @@ class ProgressBarsWidget:
                                                 / self.progressStepMaxValue)
         completedMainProgressBoxesToMark = (completedMainProgressBoxes
                                             % self.dayProgressMaxSteps)
+
         if (completedMainProgressBoxesToMark == 0 and
-                completedMainProgressBoxes > self.dayProgressMaxSteps):
+                completedMainProgressBoxes >= self.dayProgressMaxSteps):
             completedMainProgressBoxesToMark = self.dayProgressMaxSteps
 
         if completedMainProgressBoxes > self.dayProgressMaxSteps:
